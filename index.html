@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List and Task Management App</title>
+    <link rel="icon" href="assets/images/todo-list-icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="stats-container">
+            <div class="details">
+                <div class="header">
+                    <h1>To Do List</h1>
+                    <img src="assets/images/todo-list.gif" alt="To-Do List Image">
+                </div>
+                <p>Keep it up!</p>
+                <div id="progressbar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="stats-numbers">
+                <div id="numbers">0 / 0</div>
+            </div>
+        </section>
+
+        <section class="filters">
+            <div class="filter" data-filter="completed">Complete</div>
+            <div class="filter" data-filter="pending">Incomplete</div>
+            <div class="filter" data-filter="all">Show All</div>
+            <div id="delete-all" class="delete-all">Delete All</div>
+        </section>
+
+        <form id="task-form">
+            <input type="text" id="taskinput" placeholder="Write your task" required>
+            <button id="newtask" type="submit">+</button>
+        </form>
+
+        <ul id="task-list" class="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+
+</html>
